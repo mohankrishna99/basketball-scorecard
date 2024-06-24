@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basketball Scorecard</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <div class="child-container">
+                <h3>HOME</h3>
+                <div class="scoring">
+                    <p id="homescore-el" class="score">0</p>
+                </div>
+                <div class="addPoints">
+                    <button onclick="homeAdd1()">
+                        <div class="points">
+                            <span>+1</span>
+                        </div>
+                    </button>
+                    <button onclick="homeAdd2()">
+                        <div class="points">
+                            <span>+2</span>
+                        </div>
+                    </button>
+                    <button onclick="homeAdd3()">
+                        <div class="points">
+                            <span>+3</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="child-container">
+                <button id="newgame" onclick="newGame()">NEW GAME</button>
+            </div>        
+            <div class="child-container">
+                <h3>GUEST</h3>
+                <div class="scoring">
+                    <p id="guestscore-el" class="score">0</p>                    
+                </div>
+                <div class="addPoints">
+                    <button onclick="guestAdd1()">
+                        <div class="points">
+                            <span>+1</span>
+                        </div>
+                    </button>
+                    <button onclick="guestAdd2()">
+                        <div class="points">
+                            <span>+2</span>
+                        </div>
+                    </button>
+                    <button onclick="guestAdd3()">
+                        <div class="points">
+                            <span>+3</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
